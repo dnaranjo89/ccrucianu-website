@@ -2,56 +2,58 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Cristina', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Cristina Crucianu | Product Manager', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: "Cristina Crucianu's website", // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
   title: '',
   name: 'Cristina',
-  subtitle: '',
+  subtitle: "I'm the Product Carer",
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
+  paragraphOne:
+    "I'm a seasoned product manager at an ed-tech startup in Barcelona and above all, I define myself as a growth mindset person. For this reason, I host a podcast called Growth Mindset On to spread the #growthmindseton attitude.",
+  paragraphTwo:
+    'My growth attitude has taken me to learn 6 languages, live in 5 countries, build 2 businesses, finish 2 masters and start a podcast.',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://www.linkedin.com/in/ccrucianu/', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'timeline_phandeeyar.png',
+    title: 'Speaker @ Phandeeyar',
     info: '',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://www.linkedin.com/events/userresearchanduserinterviewtobuildtherightproduct/',
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'timeline_service_club.jpg',
+    title: 'Service Club',
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'timeline_manomano.png',
+    title: 'Product Manager @ ManoMano',
     info: '',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
 ];
 
@@ -68,22 +70,12 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
+      url: 'https://twitter.com/cristincrucianu',
     },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: '',
+      url: 'https://www.linkedin.com/in/ccrucianu/',
     },
   ],
 };
