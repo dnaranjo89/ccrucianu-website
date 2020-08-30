@@ -114,7 +114,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'ccrucianu@gmail.com',
 };
 
 // FOOTER DATA
@@ -131,9 +131,4 @@ export const footerData = {
       url: 'https://www.linkedin.com/in/ccrucianu/',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
