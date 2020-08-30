@@ -30,9 +30,18 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'timeline_manomano.png',
+    title: 'ManoMano',
+    subtitle: '👩‍💻 Product Manager',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'timeline_phandeeyar_talk.png',
     title: 'Speaker @ Phandeeyar',
-    info:
+    subtitle:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
     info2: '',
     url: 'https://www.linkedin.com/events/userresearchanduserinterviewtobuildtherightproduct/',
@@ -42,16 +51,16 @@ export const projectsData = [
     id: nanoid(),
     img: 'timeline_service_club.jpg',
     title: 'Service Club',
-    info: '',
+    subtitle: '👩‍💻 Product Manager',
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'timeline_manomano.png',
-    title: 'Product Manager @ ManoMano',
-    info: '',
+    img: 'timeline_techbloom.jpg',
+    title: 'TechBloom',
+    subtitle: '🚀 Organizer',
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up

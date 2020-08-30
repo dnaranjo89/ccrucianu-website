@@ -65,7 +65,7 @@ const Timeline = () => {
           <Title title="Projects" />
           <VerticalTimeline>
             {projects.map((project) => {
-              const { title, info, info2, url, repo, img, id } = project;
+              const { title, subtitle, info, info2, url, repo, img, id } = project;
 
               return (
                 <VerticalTimelineElement
@@ -75,6 +75,7 @@ const Timeline = () => {
                     'border-radius': '10px',
                     // margin: '4em 0',
                     width: '40%',
+                    textAlign: 'right',
                   }}
                   // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                   date="2011 - present"
@@ -84,7 +85,7 @@ const Timeline = () => {
                   contentArrowStyle={{ display: 'none' }}
                 >
                   <h3 className="vertical-timeline-element-title">{title}</h3>
-                  <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                  <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
                   <p>{info}</p>
                 </VerticalTimelineElement>
                 // <Row key={id}>
