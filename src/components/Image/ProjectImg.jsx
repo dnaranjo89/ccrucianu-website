@@ -28,7 +28,7 @@ const ProjectImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFluid = image.node.childImageSharp.fluid;
-      return <Img alt={alt} fluid={imageFluid} />;
+      return <Img alt={alt} fluid={imageFluid} style={{ 'border-radius': '50%' }} />;
     }}
   />
 );

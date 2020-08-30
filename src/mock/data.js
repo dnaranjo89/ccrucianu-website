@@ -30,9 +30,10 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'timeline_phandeeyar.png',
+    img: 'timeline_phandeeyar_talk.png',
     title: 'Speaker @ Phandeeyar',
-    info: '',
+    info:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
     info2: '',
     url: 'https://www.linkedin.com/events/userresearchanduserinterviewtobuildtherightproduct/',
     repo: '', // if no repo, the button will not show up

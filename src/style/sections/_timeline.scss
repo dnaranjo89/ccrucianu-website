@@ -1,0 +1,50 @@
+#timeline {
+  margin-bottom: 11rem;
+
+  & .vertical-timeline::before {
+    background: rgba(20, 35, 41, 0.08);
+  }
+  & .timelineItem{
+    margin: 7rem 0;
+    min-height: 110px;
+  }
+
+  & .timelineIcon {
+      background: #fff;
+      color: #fff;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+      box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
+
+    @include respond(phone) {
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+    }
+
+  }
+  & .timelineDate {
+    margin: 35px 70px;
+    text-align: left;
+  }
+  & .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .timelineDate {
+
+    text-align: right;
+  }
+}
+
+
+@keyframes cd-bounce-2 {
+0% {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+60% {
+  opacity: 1;
+  transform: translateX(200px);
+}
+100% {
+  transform: translateX(0);
+}
+}
