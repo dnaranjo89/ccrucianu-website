@@ -1,4 +1,5 @@
 import React from 'react';
+import config from 'react-reveal/globals';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Timeline from './Timeline/Timeline';
@@ -9,6 +10,7 @@ import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
+config({ ssrFadeout: true });
 function App() {
   return (
     <PortfolioProvider
