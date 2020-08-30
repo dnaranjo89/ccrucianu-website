@@ -3,7 +3,12 @@
 
   & .vertical-timeline::before {
     background: rgba(20, 35, 41, 0.08);
+
+    @include respond(phone) {
+      left: 11px;
+    }
   }
+
   & .timelineItem{
     margin: 7rem 0;
     min-height: 110px;
@@ -19,8 +24,8 @@
       box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
 
     @include respond(phone) {
-      width: 70px;
-      height: 70px;
+      width: 55px;
+      height: 55px;
       margin-left: -16px;
     }
 

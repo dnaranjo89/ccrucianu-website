@@ -5,7 +5,6 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import Subtitle from '../Title/Subtitle';
 import ProjectImg from '../Image/ProjectImg';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -65,10 +64,11 @@ const Timeline = () => {
           <Title title="⌛ Timeline" subtitle="Professional experience" />
           <VerticalTimeline>
             {projects.map((project) => {
-              const { title, subtitle, info, date, url, repo, img, id } = project;
+              const { title, subtitle, info, date, url, img, id } = project;
 
               return (
                 <VerticalTimelineElement
+                  key={id}
                   className="timelineItem"
                   // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                   date={date}
