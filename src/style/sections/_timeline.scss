@@ -19,21 +19,49 @@
       box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
 
     @include respond(phone) {
-      width: 100px;
-      height: 100px;
-      margin-left: -50px;
+      width: 70px;
+      height: 70px;
+      margin-left: -16px;
     }
 
   }
   & .timelineDate {
     margin: 35px 70px;
     text-align: left;
+
+    @include respond(phone) {
+      margin: 0;
+    }
   }
   & .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .timelineDate {
     text-align: right;
   }
+
+  & .vertical-timeline-element-content {
+    box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 42%;
+
+    @include respond(phone) {
+      width: 85%;
+      text-align: left;
+    }
+  }
+
+  & .timelineItemTitle {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
 }
 
-.vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) {
- text-align: left;
+.vertical-timeline-element {
+  text-align: right;
+
+  &:nth-child(even):not(.vertical-timeline-element--left) {
+    text-align: left;
+   }
 }
+
+
+

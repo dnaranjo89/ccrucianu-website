@@ -8,12 +8,11 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 import 'react-vertical-timeline-component/style.min.css';
 
-const Logo = ({ alt, filename }) =>
-  console.log('filename', alt, filename) || (
-    <div key={alt} data-tilt className="thumbnail rounded">
-      <ProjectImg alt={alt} filename={filename} />
-    </div>
-  );
+const Logo = ({ alt, filename, url }) => (
+  <a href={url} key={alt} data-tilt className="thumbnail rounded">
+    <ProjectImg alt={alt} filename={filename} />
+  </a>
+);
 
 const Timeline = () => {
   const { projects } = useContext(PortfolioContext);
@@ -70,22 +69,17 @@ const Timeline = () => {
               return (
                 <VerticalTimelineElement
                   className="timelineItem"
-                  contentStyle={{
-                    'box-shadow': '7px 10px 5px 0px rgba(0, 0, 0, 0.25)',
-                    'border-radius': '10px',
-                    // margin: '4em 0',
-                    width: '40%',
-                    textAlign: 'right',
-                  }}
                   // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                   date="2011 - present"
                   iconClassName="timelineIcon"
                   dateClassName="timelineDate"
-                  icon={<Logo alt={title} filename={img} />}
+                  icon={<Logo alt={title} filename={img} url={url} />}
                   contentArrowStyle={{ display: 'none' }}
                 >
-                  <h3 className="vertical-timeline-element-title">{title}</h3>
-                  <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
+                  <a href={url}>
+                    <h3 className="timelineItemTitle">{title}</h3>
+                    <h4 className="timelineItemSubtitle">{subtitle}</h4>
+                  </a>
                   <p>{info}</p>
                 </VerticalTimelineElement>
                 // <Row key={id}>

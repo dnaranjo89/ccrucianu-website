@@ -41,10 +41,18 @@ export const projectsData = [
     id: nanoid(),
     img: 'timeline_phandeeyar_talk.png',
     title: 'Speaker @ Phandeeyar',
-    subtitle:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
+    subtitle: '🗣️ Speaker',
     info2: '',
     url: 'https://www.linkedin.com/events/userresearchanduserinterviewtobuildtherightproduct/',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'timeline_hotjar_talk.png',
+    title: 'Hotjar Talks',
+    subtitle: '🗣️ Speaker',
+    info2: '',
+    url: 'https://www.hotjar.com/ecommerce-tips/ux/user-interviews/',
     repo: '', // if no repo, the button will not show up
   },
   {
@@ -61,6 +69,24 @@ export const projectsData = [
     img: 'timeline_techbloom.jpg',
     title: 'TechBloom',
     subtitle: '🚀 Organizer',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'timeline_podcast.jpg',
+    title: 'GrowthMindsetOn',
+    subtitle: '🎙️ Podcast Host',
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'timeline_helloveronica.jpg',
+    title: 'HelloVeronica',
+    subtitle: '👩‍💼 Founder',
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up
