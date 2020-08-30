@@ -2,9 +2,12 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
 
-const Title = ({ title }) => (
+const Title = ({ title, subtitle }) => (
   <Fade bottom duration={1000} delay={300} distance="0px">
-    <h2 className="section-title">{title}</h2>
+    <div className="sectionTitleContainer">
+      <h2 className="sectionTitle">{title}</h2>
+      {subtitle && <p className="sectionSubtitle">{subtitle}</p>}
+    </div>
   </Fade>
 );
 

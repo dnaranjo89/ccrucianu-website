@@ -33,63 +33,80 @@ export const projectsData = [
     img: 'timeline_manomano.png',
     title: 'ManoMano',
     subtitle: '👩‍💻 Product Manager',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    info: '',
+    url: 'https://www.manomano.co.uk/',
+    date: 'May 2020 - Present',
   },
   {
     id: nanoid(),
     img: 'timeline_phandeeyar_talk.png',
     title: 'Speaker @ Phandeeyar',
     subtitle: '🗣️ Speaker',
-    info2: '',
+    info: 'User Research and User Interview to Build the Right Product',
     url: 'https://www.linkedin.com/events/userresearchanduserinterviewtobuildtherightproduct/',
-    repo: '', // if no repo, the button will not show up
+    date: 'Aug 2020',
   },
   {
     id: nanoid(),
     img: 'timeline_hotjar_talk.png',
     title: 'Hotjar Talks',
     subtitle: '🗣️ Speaker',
-    info2: '',
+    info: 'Actionable tips to avoid bias in your users interviews',
     url: 'https://www.hotjar.com/ecommerce-tips/ux/user-interviews/',
-    repo: '', // if no repo, the button will not show up
+    date: 'Jul 2020',
   },
   {
     id: nanoid(),
     img: 'timeline_service_club.jpg',
     title: 'Service Club',
     subtitle: '👩‍💻 Product Manager',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    info: '',
+    url: 'https://serviceclub.com/',
+    date: 'Oct 2018 - Apr 2019',
+  },
+  {
+    id: nanoid(),
+    img: 'timeline_classgap.png',
+    title: 'ClassGap',
+    subtitle: '👩‍💻 Product Manager',
+    info: '',
+    url: 'https://www.classgap.com/en',
+    date: 'Apr 2019 - Apr 2020',
   },
   {
     id: nanoid(),
     img: 'timeline_techbloom.jpg',
     title: 'TechBloom',
-    subtitle: '🚀 Organizer',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    subtitle: '🚀 Co-Founder',
+    info: '',
+    url: 'https://www.techbloom.org/',
   },
   {
     id: nanoid(),
     img: 'timeline_podcast.jpg',
     title: 'GrowthMindsetOn',
     subtitle: '🎙️ Podcast Host',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    info: '',
+    url: 'https://open.spotify.com/show/3vJ8I1JrfGIW0vXVzGrCwy',
+    date: 'Mar 2019 - Sep 2020',
   },
   {
     id: nanoid(),
     img: 'timeline_helloveronica.jpg',
     title: 'HelloVeronica',
-    subtitle: '👩‍💼 Founder',
-    info2: '',
+    subtitle: '🚀 Founder',
+    info: '',
     url: '',
-    repo: '', // if no repo, the button will not show up
+    date: 'Sep 2014 - Dec 2018',
+  },
+  {
+    id: nanoid(),
+    img: 'timeline_nuclio.png',
+    title: 'Nuclio Venture Builder',
+    subtitle: '👩‍💻 Product Manager',
+    info: '',
+    url: 'https://www.youtube.com/watch?v=TzlJEH90Os0',
+    date: 'Oct 2018 - Nov 2018',
   },
 ];
 
@@ -118,5 +135,5 @@ export const footerData = {
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

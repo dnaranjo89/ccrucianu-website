@@ -22,9 +22,12 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.section-title {
+.sectionTitleContainer {
   margin: 0px;
   margin-bottom: 4.5rem;
+}
+
+.sectionTitle {
   font-size: $big-font-size;
   font-weight: bold;
   text-transform: uppercase;

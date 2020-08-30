@@ -5,6 +5,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
+import Subtitle from '../Title/Subtitle';
 import ProjectImg from '../Image/ProjectImg';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -61,16 +62,16 @@ const Timeline = () => {
     <section id="timeline">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="⌛ Timeline" subtitle="Professional experience" />
           <VerticalTimeline>
             {projects.map((project) => {
-              const { title, subtitle, info, info2, url, repo, img, id } = project;
+              const { title, subtitle, info, date, url, repo, img, id } = project;
 
               return (
                 <VerticalTimelineElement
                   className="timelineItem"
                   // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                  date="2011 - present"
+                  date={date}
                   iconClassName="timelineIcon"
                   dateClassName="timelineDate"
                   icon={<Logo alt={title} filename={img} url={url} />}
@@ -80,85 +81,8 @@ const Timeline = () => {
                     <h3 className="timelineItemTitle">{title}</h3>
                     <h4 className="timelineItemSubtitle">{subtitle}</h4>
                   </a>
-                  <p>{info}</p>
+                  <p className="timelineItemInfo">{info}</p>
                 </VerticalTimelineElement>
-                // <Row key={id}>
-                //   <Col lg={4} sm={12}>
-                //     <Fade
-                //       left={isDesktop}
-                //       bottom={isMobile}
-                //       duration={1000}
-                //       delay={500}
-                //       distance="30px"
-                //     >
-                //       <div className="project-wrapper__text">
-                //         <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                //         <div>
-                //           <p>
-                //             {info ||
-                //               'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                //           </p>
-                //           <p className="mb-4">{info2 || ''}</p>
-                //         </div>
-                //         <a
-                //           target="_blank"
-                //           rel="noopener noreferrer"
-                //           className="cta-btn cta-btn--hero"
-                //           href={url || '#!'}
-                //         >
-                //           See Live
-                //         </a>
-
-                //         {repo && (
-                //           <a
-                //             target="_blank"
-                //             rel="noopener noreferrer"
-                //             className="cta-btn text-color-main"
-                //             href={repo}
-                //           >
-                //             Source Code
-                //           </a>
-                //         )}
-                //       </div>
-                //     </Fade>
-                //   </Col>
-                //   <Col lg={8} sm={12}>
-                //     <Fade
-                //       right={isDesktop}
-                //       bottom={isMobile}
-                //       duration={1000}
-                //       delay={1000}
-                //       distance="30px"
-                //     >
-                //       <div className="project-wrapper__image">
-                //         <a
-                //           href={url || '#!'}
-                //           target="_blank"
-                //           aria-label="Project Link"
-                //           rel="noopener noreferrer"
-                //         >
-                //           <Tilt
-                //             options={{
-                //               reverse: false,
-                //               max: 8,
-                //               perspective: 1000,
-                //               scale: 1,
-                //               speed: 300,
-                //               transition: true,
-                //               axis: null,
-                //               reset: true,
-                //               easing: 'cubic-bezier(.03,.98,.52,.99)',
-                //             }}
-                //           >
-                //             <div data-tilt className="thumbnail rounded">
-                //               <ProjectImg alt={title} filename={img} />
-                //             </div>
-                //           </Tilt>
-                //         </a>
-                //       </div>
-                //     </Fade>
-                //   </Col>
-                // </Row>
               );
             })}
           </VerticalTimeline>
